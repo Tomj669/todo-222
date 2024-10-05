@@ -4,7 +4,7 @@ import { Checkbox } from "./components/ui/checkbox";
 import { ArrowUp,ArrowDown,X,Trash2 } from "lucide-react";
 
 export default function Content() {
-  cosnt initialData=[];
+   const initialData=[{}]
   // Load todos from localStorage or use initialData if nothing is found
   const [todos, setTodos] = useState(() => {
     const savedTodos = localStorage.getItem("todos");
