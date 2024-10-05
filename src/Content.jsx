@@ -8,7 +8,7 @@ export default function Content() {
   // Load todos from localStorage or use initialData if nothing is found
   const [todos, setTodos] = useState(() => {
     const savedTodos = localStorage.getItem("todos");
-    return savedTodos ? JSON.parse(savedTodos) : initialData;
+    return savedTodos ? JSON.parse(savedTodos) : [];
   });
 
   const [ischecked, setIschecked] = useState(false);
