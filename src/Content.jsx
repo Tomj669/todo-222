@@ -3,7 +3,6 @@ import { Button } from "./components/ui/button";
 import { Checkbox } from "./components/ui/checkbox";
 import { ArrowUp,ArrowDown,X,Trash2 } from "lucide-react";
 
-
 export default function Content() {
   // Load todos from localStorage or use initialData if nothing is found
   const [todos, setTodos] = useState(() => {
@@ -49,8 +48,8 @@ export default function Content() {
 
   return (
     <>
-      <div className="">
-        <div className="font-bold text-white w-fit text-2xl font-sans mb-2 bg-zinc-900 shadow-xl"> Todo List </div>
+      <div className="bg-zinc-900 m-16 ">
+        <div className="font-bold text-white text-2xl font-sans mb-2 bg-zinc-900 shadow-xl p-16"> Todo List </div>
         <div id="container" className="border p-6 bg-white rounded-md">
           <div className="flex justify-center gap-2">
             <div>
@@ -87,9 +86,9 @@ export default function Content() {
 
               <div className="text-white">
                 {value.status === 0 ? (
-                  <div className="bg-white min-w-[200px] max-w-[200px] text-black rounded-sm px-2">{value.todo}</div>
+                  <div className="bg-white min-w-[150px] max-w-[200px] text-black rounded-sm px-2">{value.todo}</div>
                 ) : (
-                  <div className="bg-white min-w-[200px]  max-w-[200px] line-through text-black rounded-sm px-2">{value.todo}</div>
+                  <div className="bg-white min-w-[150px]  max-w-[200px] line-through text-black rounded-sm px-2">{value.todo}</div>
                 )}
               </div>
 
@@ -110,3 +109,4 @@ export default function Content() {
     </>
   );
 }
+
