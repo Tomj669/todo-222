@@ -4,13 +4,6 @@ import { Checkbox } from "./components/ui/checkbox";
 import { ArrowUp,ArrowDown,X,Trash2 } from "lucide-react";
 
 
-const initialData = [
-  { todo: 'Go to the store', status: 0 },
-  { todo: 'Read a book', status: 1 },
-  { todo: 'Walk the dog', status: 0 },
-  { todo: 'Finish the project', status: 0 }
-];
-
 export default function Content() {
   // Load todos from localStorage or use initialData if nothing is found
   const [todos, setTodos] = useState(() => {
